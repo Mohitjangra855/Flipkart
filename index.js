@@ -63,6 +63,7 @@ store.on("error", () => {
 /////////////////////////Sessions////////////////////////
 
 let sessionOption = {
+    store:store,
     secret: process.env.SECRET,
     resave: false,
     saveUninitialized: true,
